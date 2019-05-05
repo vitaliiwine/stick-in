@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="css/style.css">
     <title>stickIn</title>
 </head>
-<body>
 
 <!-- NAVIGATION -->
 
-<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
-    <img src="favicon/department.png" width="40" alt="navbar icon">
+<body data-spy="scroll" data-target="#main-nav" id="home">
+<nav id="main-nav" class="swag navbar navbar-expand-sm navbar-dark  fixed-top">
+    <i class="fab fa-gg-circle fa-3x"></i>
     <a href="index.html" class="navbar-brand ml-3">StickIn</a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
                 <a href="#home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="#stickIn-head-section" class="nav-link">Stick in</a>
+                <a href="#stick-in-head-section" class="nav-link">Stick in</a>
             </li>
             <li class="nav-item">
                 <a href="#create-head-section" class="nav-link">Create</a>
@@ -46,16 +46,265 @@
         <div class="home-inner container">
             <div class="row">
                 <div class="col-lg-8 d-none d-lg-block">
-                    <h1 class="display-4">Just another <strong>social network</strong>? You bet, <strong>stick
-                        in</strong> right now!</h1>
+                    <h1 class="display-4">Just another <strong>social network</strong>? You bet,
+                        <strong>stick in</strong> right now!</h1>
+
+                    <!-- SIDE HEADING 1 -->
+
                     <div class="d-flex">
-                        .p-4
+                        <div class="p-4 align-self-start">
+                            <i class="far fa-address-card fa-3x"></i>
+                        </div>
+                        <div class="p-4 align-self-end">Create a StickIn profile to manage all of your social media
+                            accounts
+                        </div>
+                    </div>
+
+                    <!-- SIDE HEADING 2 -->
+
+                    <div class="d-flex">
+                        <div class="p-4 align-self-start">
+                            <i class="fas fa-boxes fa-3x"></i>
+                        </div>
+                        <div class="p-4 align-self-end">Make connections to broaden Your StickIn Network
+                        </div>
+                    </div>
+
+                    <!-- SIDE HEADING 3 -->
+
+                    <div class="d-flex">
+                        <div class="p-4 align-self-start">
+                            <i class="fas fa-database fa-3x"></i>
+                        </div>
+                        <div class="p-4 align-self-end">Store all of your social media data in One place</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-center card-form">
+                        <div class="card-body">
+                            <p class="text-danger">Don't have an account yet?</p>
+                            <hr>
+                            <h3>Sign Up Now</h3>
+                            <p>Fill in this form to Stick In!</p>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-lg" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control form-control-lg" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control form-control-lg"
+                                           placeholder="Confirm your password">
+                                </div>
+                                <label class="form-check-label mb-3">
+                                    <input class="form-check-input" type="checkbox">Remember Me
+                                </label>
+                                <input type="submit" value="Submit" class="btn btn-success btn-block">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
+
+<!-- STICK IN HEAD -->
+
+<section id="stick-in-head-section">
+    <div class="container">
+        <div class="d-flex">
+            <div class="col text-center py-4">
+                <i id="stick-in-icon" class="fab fa-gg-circle fa-3x"></i>
+                <h1 class="display-4">Stick In</h1>
+                <p class="lead">Too may social accounts? Too many media, messages and docs? Stick in so to join the
+                    friendly community of social media geeeks. </p>
+                <a href="#" class="btn btn-outline-secondary">Find Out More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STICK IN SECTION -->
+
+<section id="stick-in-section" class="bg-light text-muted py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img id="stick-in-image" src="img/stick-in-section-image.jpg" alt="stick in section image"
+                     class="img-fluid mb-3 rounded">
+            </div>
+            <div class="col-md-6">
+                <h3>Link & Stick</h3>
+                <p>You can easily link any social profile to the wide community of StickIn</p>
+
+                <div class="d-flex">
+                    <div class="p-4 align-self-start">
+                        <i class="fas fa-paperclip fa-3x"></i>
+                    </div>
+                    <div class="p-4 align-self-end">Stick to the people, things and places you love and manage it all in
+                        one place
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <div class="p-4 align-self-start">
+                        <i class="fas fa-user-plus fa-3x"></i>
+                    </div>
+                    <div class="p-4 align-self-end">Make as many connections as possible to broaden Your StickIn Network
+                        to stay in tocuh
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CREATE HEAD -->
+
+<section id="create-head-section" class="bg-primary">
+    <div class="container">
+        <div class="d-flex">
+            <div class="col text-center py-4">
+                <i id="create-icon" class="fab fa-creative-commons-remix fa-3x"></i>
+                <h1 class="display-4">Create</h1>
+                <p class="lead">As soon as you stuck in there are many ways to create anything on your socials. Starting
+                    from a simple face to face meeting to a city flash-mob.</p>
+                <a href="#" class="btn btn-outline-light ">Find Out More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CREATE SECTION -->
+
+<section id="create-section" class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-2">
+                <img id="create-image" src="img/create-section-image.jpg" alt="create section image"
+                     class="img-fluid mb-3 rounded">
+            </div>
+            <div class="col-md-6 order-1">
+                <h3>Create & Connect</h3>
+                <p>Creation is the heart of it! As long as you create you are constantly moving forward.</p>
+
+                <div class="d-flex">
+                    <div class="p-4 align-self-start">
+                        <i class="far fa-calendar-check fa-3x"></i>
+                    </div>
+                    <div class="p-4 align-self-end">You can easily create any event possible in StickIn</div>
+                </div>
+
+                <div class="d-flex">
+                    <div class="p-4 align-self-start">
+                        <i class="fas fa-link fa-3x"></i>
+                    </div>
+                    <div class="p-4 align-self-end">Invite friends or people you'd like to get to know to join your
+                        events
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SHARE HEAD -->
+
+<section id="share-head-section" class="bg-primary">
+    <div class="container">
+        <div class="d-flex">
+            <div class="col text-center py-4">
+                <i id="share-icon" class="fas fa-chart-pie fa-3x"></i>
+                <h1 class="display-4">Share</h1>
+                <p class="lead">As you creating anything in StickIn like events, docs or a story don't forget to share
+                    it through all of your socials.</p>
+                <a href="#" class="btn btn-outline-light ">Find Out More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SHARE SECTION -->
+
+<section id="share-section" class="bg-light text-muted py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img id="share-image" src="img/share-section-image.jpg" alt="share section image"
+                     class="img-fluid mb-3 rounded">
+            </div>
+            <div class="col-md-6">
+                <h3>Invite & Share</h3>
+                <p>Got an event planned? Don't hesitate to invite family and friends so to share the experience
+                    altogether!</p>
+
+                <div class="d-flex">
+                    <div class="p-4 align-self-start">
+                        <i class="fas fa-users fa-3x"></i>
+                    </div>
+                    <div class="p-4 align-self-end">Invite the loved ones to join you in your events</div>
+                </div>
+
+                <div class="d-flex">
+                    <div class="p-4 align-self-start">
+                        <i class="fas fa-share-square fa-3x"></i>
+                    </div>
+                    <div class="p-4 align-self-end">Share your content and emotions touching everyone in every social
+                        profile you have
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER SECTION -->
+
+<footer class="page-footer font-small">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5 mb-3">
+                <div class="text-center">
+                    <a class="fb-ic">
+                        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-3x"></i>
+                    </a>
+                    <a class="tw-ic">
+                        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-3x"></i>
+                    </a>
+                    <a class="gplus-ic">
+                        <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-3x"></i>
+                    </a>
+                    <a class="li-ic">
+                        <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-3x"></i>
+                    </a>
+                    <a class="ins-ic">
+                        <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-3x"></i>
+                    </a>
+                    <a class="pin-ic">
+                        <i class="fab fa-pinterest fa-lg white-text fa-3x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- FOOTER ELEMENTS -->
+
+    <div class="footer-copyright text-center py-3">
+        <img class="mt-2 mb-2" src="favicon/playscape-logo.png" width="40" alt="playscape footer logo">
+        <p class="text-success">PLAYSCAPE powered</p>
+        &copy; <span id="year"></span>
+        <a href="https://playscape.co.il/"> playscape.co.il</a>
+    </div>
+</footer>
+
+
 <section>
     <script
             src="https://code.jquery.com/jquery-3.4.0.min.js"

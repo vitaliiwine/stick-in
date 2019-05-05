@@ -3,7 +3,101 @@ body {
     color: #fff;
 }
 
+hr {
+    background-color: white;
+}
+
+/* NAVIGATION */
+
 .navbar {
     border-bottom: deepskyblue 3px solid;
-    opacity: 0.8;
+    opacity: .9;
+}
+
+/* HOME SECTION */
+
+#home-section {
+    background-size: cover;
+    background: url(../img/home-section-image.jpeg) no-repeat;
+    min-height: 700px;
+}
+
+#home-section .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#home-section .home-inner {
+    padding-top: 125px;
+}
+
+#home-section .card-form {
+    opacity: .9;
+    background-color: deepskyblue;
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, .3);
+    z-index: 999;
+}
+
+#home-section .fas, #home-section .far, .fab {
+    color: deepskyblue;
+}
+
+#home-section .fas::before, #home-section .far::before {
+    text-shadow: 10px 10px 30px rgba(255, 255, 255, .5);
+    z-index: 999;
+}
+
+/* STICK IN SECTION */
+
+/*#stick-in-head-section {*/
+    /*border-top: deepskyblue 4px solid;*/
+    /*border-bottom: deepskyblue 4px solid;*/
+    /*background-size: cover;*/
+    /*background-image: url("../img/image.jpg");*/
+/*}*/
+
+#stick-in-image, #share-image  {
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, .5);
+    z-index: 999;
+}
+
+#create-image {
+    box-shadow: 5px 5px 30px rgba(110, 110, 110, .5);
+    z-index: 999;
+}
+
+#stick-in-icon, #create-icon {
+    color: white;
+}
+
+/*#stick-in-head-section .dark-overlay-stick-in {*/
+/*position: relative;*/
+/*width: 100%;*/
+/*background-color: rgba(0, 0, 0, 0.5);*/
+/*}*/
+
+/*#create-head-section {*/
+    /*border-top: rgb(41, 43, 44) 4px solid;*/
+    /*border-bottom: rgb(41, 43, 44) 4px solid;*/
+/*}*/
+
+.fa-facebook-f, .fa-twitter, .fa-google-plus-g, .fa-linkedin-in, .fa-instagram, .fa-pinterest {
+    color: rgb(2, 117, 216);
+}
+
+#footer-icon {
+    color: #1c7430;
+}
+#main-nav{
+    transition: background-color .18s,color .18s;
+    background-color: rgba(100,100,100,.9) ;
+
+}
+.swag {
+    background-color: rgba(255,255,255,.7) !important;
+    color: #aaa !important;
 }
