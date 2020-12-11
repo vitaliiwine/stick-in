@@ -5,17 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https:/use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>stickIn</title>
 </head>
-
-<!-- NAVIGATION -->
-
 <body data-spy="scroll" data-target="#main-nav" id="home">
-<nav id="main-nav" class="color-change navbar navbar-expand-sm navbar-dark fixed-top">
+
+<!-- Navigation-->
+<nav id="main-nav" class="color-change navbar navbar-expand-sm navbar-light fixed-top">
     <i class="fab fa-gg-circle fa-3x"></i>
     <a href="index.html" class="navbar-brand ml-3">StickIn</a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -39,8 +38,7 @@
     </div>
 </nav>
 
-<!-- HOME SECTION -->
-
+<!-- Home Section -->
 <header id="home-section">
     <div class="dark-overlay">
         <div class="home-inner container">
@@ -49,8 +47,7 @@
                     <h1 class="display-4">Just another <strong>social network</strong>? You bet,
                         <strong>stick in</strong> right now!</h1>
 
-                    <!-- SIDE HEADING 1 -->
-
+                    <!-- Side Heading 1 -->
                     <div class="d-flex">
                         <div class="p-4 align-self-start">
                             <i class="far fa-address-card fa-3x"></i>
@@ -60,8 +57,7 @@
                         </div>
                     </div>
 
-                    <!-- SIDE HEADING 2 -->
-
+                    <!-- Side Heading 2 -->
                     <div class="d-flex">
                         <div class="p-4 align-self-start">
                             <i class="fas fa-boxes fa-3x"></i>
@@ -70,8 +66,7 @@
                         </div>
                     </div>
 
-                    <!-- SIDE HEADING 3 -->
-
+                    <!-- Side Heading 3 -->
                     <div class="d-flex">
                         <div class="p-4 align-self-start">
                             <i class="fas fa-database fa-3x"></i>
@@ -79,32 +74,59 @@
                         <div class="p-4 align-self-end">Store all of your social media data in One place</div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card text-center card-form">
-                        <div class="card-body">
-                            <p class="text-danger">Don't have an account yet?</p>
-                            <hr>
-                            <h3>Sign Up Now</h3>
-                            <p>Fill in this form to Stick In!</p>
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Username">
+
+                <!-- Registration  Form -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-9 mx-auto">
+                            <div class="card card-signin flex-row my-5">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Register</h5>
+                                    <form class="form-signin">
+                                        <div class="form-label-group">
+                                            <input type="text" id="inputUserame" class="form-control"
+                                                   placeholder="Username"
+                                                   required autofocus>
+                                            <label for="inputUserame">Username</label>
+                                        </div>
+
+                                        <div class="form-label-group">
+                                            <input type="email" id="inputEmail" class="form-control"
+                                                   placeholder="Email address"
+                                                   required>
+                                            <label for="inputEmail">Email address</label>
+                                        </div>
+
+                                        <hr>
+
+                                        <div class="form-label-group">
+                                            <input type="password" id="inputPassword" class="form-control"
+                                                   placeholder="Password"
+                                                   required>
+                                            <label for="inputPassword">Password</label>
+                                        </div>
+
+                                        <div class="form-label-group">
+                                            <input type="password" id="inputConfirmPassword" class="form-control"
+                                                   placeholder="Password" required>
+                                            <label for="inputConfirmPassword">Confirm password</label>
+                                        </div>
+
+                                        <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">
+                                            Register
+                                        </button>
+                                        <a class="d-block text-center mt-2 small" href="#">Sign In</a>
+                                        <hr class="my-4">
+                                        <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i
+                                                class="fab fa-google mr-2"></i> Sign up with Google
+                                        </button>
+                                        <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit">
+                                            <i
+                                                    class="fab fa-facebook-f mr-2"></i> Sign up with Facebook
+                                        </button>
+                                    </form>
                                 </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control form-control-lg" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control form-control-lg" placeholder="Password">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control form-control-lg"
-                                           placeholder="Confirm your password">
-                                </div>
-                                <label class="form-check-label mb-3">
-                                    <input class="form-check-input" type="checkbox">Remember Me
-                                </label>
-                                <input type="submit" value="Submit" class="btn btn-success btn-block">
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,8 +135,7 @@
     </div>
 </header>
 
-<!-- STICK IN HEAD -->
-
+<!-- Jumbotron Stick In -->
 <section id="stick-in-head-section">
     <div class="container">
         <div class="d-flex">
@@ -129,8 +150,7 @@
     </div>
 </section>
 
-<!-- STICK IN SECTION -->
-
+<!-- Stick in Section -->
 <section id="stick-in-section" class="bg-light text-muted py-4">
     <div class="container">
         <div class="row">
@@ -164,8 +184,7 @@
     </div>
 </section>
 
-<!-- CREATE HEAD -->
-
+<!-- Jumbotron Create -->
 <section id="create-head-section" class="bg-primary">
     <div class="container">
         <div class="d-flex">
@@ -180,8 +199,7 @@
     </div>
 </section>
 
-<!-- CREATE SECTION -->
-
+<!-- Create Section -->
 <section id="create-section" class="py-4">
     <div class="container">
         <div class="row">
@@ -193,6 +211,7 @@
                 <h3>Create & Connect</h3>
                 <p>Creation is the heart of it! As long as you create you are constantly moving forward.</p>
 
+                <!-- Side Heading 1 -->
                 <div class="d-flex">
                     <div class="p-4 align-self-start">
                         <i class="far fa-calendar-check fa-3x"></i>
@@ -200,6 +219,7 @@
                     <div class="p-4 align-self-end">You can easily create any event possible in StickIn</div>
                 </div>
 
+                <!-- Side Heading 2 -->
                 <div class="d-flex">
                     <div class="p-4 align-self-start">
                         <i class="fas fa-link fa-3x"></i>
@@ -213,8 +233,7 @@
     </div>
 </section>
 
-<!-- SHARE HEAD -->
-
+<!-- Jumbotron Share -->
 <section id="share-head-section" class="bg-primary">
     <div class="container">
         <div class="d-flex">
@@ -229,8 +248,7 @@
     </div>
 </section>
 
-<!-- SHARE SECTION -->
-
+<!-- Share Section -->
 <section id="share-section" class="bg-light text-muted py-4">
     <div class="container">
         <div class="row">
@@ -243,6 +261,7 @@
                 <p>Got an event planned? Don't hesitate to invite family and friends so to share the experience
                     altogether!</p>
 
+                <!-- Side Heading 1 -->
                 <div class="d-flex">
                     <div class="p-4 align-self-start">
                         <i class="fas fa-users fa-3x"></i>
@@ -250,6 +269,7 @@
                     <div class="p-4 align-self-end">Invite the loved ones to join you in your events</div>
                 </div>
 
+                <!-- Side Heading 2 -->
                 <div class="d-flex">
                     <div class="p-4 align-self-start">
                         <i class="fas fa-share-square fa-3x"></i>
@@ -263,8 +283,7 @@
     </div>
 </section>
 
-<!-- FOOTER SECTION -->
-
+<!-- Footer -->
 <footer class="page-footer font-small">
     <div class="container">
         <div class="row">
@@ -294,10 +313,10 @@
     </div>
     <hr>
 
-    <!-- FOOTER ELEMENTS -->
+    <!-- Footer Down -->
 
     <div class="footer-copyright text-center py-3">
-        <p class="text-success">Vitalii Honcharenko &copy; 2020</p>
+        <p class="text-success">&copy; 2020 Vitalii Honcharenko </p>
     </div>
 </footer>
 
